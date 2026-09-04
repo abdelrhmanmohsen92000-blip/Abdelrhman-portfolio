@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abdelrhman Mohsen — BIM Architect</title>
+<meta name="description" content="Abdelrhman Mohsen, BIM Architect and Interior & Exterior Designer. Revit-driven BIM workflows, LOD 350+, multidisciplinary coordination across Egypt, Saudi Arabia and the UAE.">
+
+<!-- Favicon -->
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon-180.png">
+
+<!-- Open Graph / social preview (update the domain in these two URLs once your GitHub Pages link is live) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Abdelrhman Mohsen — BIM Architect">
+<meta property="og:description" content="BIM Architect and Interior & Exterior Designer. Revit-driven workflows, LOD 350+, coordination across Egypt, Saudi Arabia and the UAE.">
+<meta property="og:image" content="img/profile-og.jpg">
+<meta property="og:url" content="">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Abdelrhman Mohsen — BIM Architect">
+<meta name="twitter:description" content="BIM Architect and Interior & Exterior Designer, based in Egypt.">
+<meta name="twitter:image" content="img/profile-og.jpg">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Abdelrhman Mohsen",
+  "jobTitle": "BIM Architect & Interior/Exterior Designer",
+  "email": "mailto:architect.abdelrhmanmohsen@gmail.com",
+  "telephone": "+201092083829",
+  "url": "",
+  "sameAs": ["https://www.linkedin.com/in/abdelrhman-mohsen-bimarchitect"],
+  "address": { "@type": "PostalAddress", "addressCountry": "EG" },
+  "image": "img/profile-og.jpg"
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* black-leaning default */
+    --paper:#0d0f11;
+    --paper-alt:#17191c;
+    --ink:#edeff0;
+    --ink-soft:#b6bcc2;
+    --ink-faint:#7d858c;
+    --blue:#6f9adf;
+    --blue-bright:#8fb3ea;
+    --red:#e0806a;
+    --line:#2b2f33;
+    --line-soft:#1c1e21;
+    --radius:2px;
+    --disp: 'Space Grotesk', sans-serif;
+    --body: 'IBM Plex Sans', sans-serif;
+    --mono: 'IBM Plex Mono', monospace;
+    /* fixed tones — do not flip with theme, used for the dark contact band */
+    --deep:#000000;
+    --deep-line:#2b2f33;
+    --deep-text-soft:#a9b1b8;
+    --deep-text-faint:#7d8791;
+    color-scheme: dark;
+  }
+
+  [data-theme="dark"]{
+    --paper:#0d0f11;
+    --paper-alt:#17191c;
+    --ink:#edeff0;
+    --ink-soft:#b6bcc2;
+    --ink-faint:#7d858c;
+    --blue:#6f9adf;
+    --blue-bright:#8fb3ea;
+    --red:#e0806a;
+    --line:#2b2f33;
+    --line-soft:#1c1e21;
+    --deep:#000000;
+    color-scheme: dark;
+  }
+
+  [data-theme="light"]{
+    --paper:#eceeee;
+    --paper-alt:#f7f7f5;
+    --ink:#14191f;
+    --ink-soft:#4b535c;
+    --ink-faint:#8c949c;
+    --blue:#23407a;
+    --blue-bright:#2e5bb8;
+    --red:#b5391d;
+    --line:#c7ccd0;
+    --line-soft:#dde0e2;
+    color-scheme: light;
+  }
+
+  *{margin:0;padding:0;box-sizing:border-box;}
+  *, *::before, *::after{
+    transition: background-color .35s ease, border-color .35s ease, color .35s ease, fill .35s ease;
+  }
+
+  html{scroll-behavior:smooth;}
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important;}
+  }
+
+  body{
+    font-family:var(--body);
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+  }
+
+  a{color:inherit;}
+  img,svg{display:block;max-width:100%;}
+
+  .wrap{max-width:1120px;margin:0 auto;padding:0 32px;}
+
+  ::selection{background:var(--blue);color:#fff;}
+
+  a:focus-visible, button:focus-visible{
+    outline:2px solid var(--blue-bright);
+    outline-offset:3px;
+  }
+
+  /* ---------- Nav ---------- */
+  header{
+    position:sticky;top:0;z-index:50;
+    background:color-mix(in srgb, var(--paper) 88%, transparent);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:18px 32px;max-width:1120px;margin:0 auto;
+  }
+  .nav-mark{
+    font-family:var(--disp);font-weight:600;font-size:1.05rem;
+    letter-spacing:0.01em;text-decoration:none;
+  }
+  .nav-mark span{color:var(--blue);}
+  .nav-links{display:flex;gap:28px;list-style:none;font-size:0.92rem;}
+  .nav-links a{text-decoration:none;color:var(--ink-soft);border-bottom:1px solid transparent;padding-bottom:2px;transition:border-color .15s ease, color .15s ease;}
+  .nav-links a:hover{color:var(--ink);border-color:var(--blue);}
+  .nav-cta{
+    font-family:var(--mono);font-size:0.78rem;color:var(--blue);
+    border:1px solid var(--blue);padding:7px 14px;text-decoration:none;
+    transition:background .15s ease, color .15s ease;
+  }
+  .nav-cta:hover{background:var(--blue);color:#fff;}
+  .nav-toggle{display:none;background:none;border:none;cursor:pointer;padding:4px;}
+  .nav-toggle span{display:block;width:22px;height:2px;background:var(--ink);margin:5px 0;}
+
+  .theme-toggle{
+    display:flex;align-items:center;justify-content:center;
+    width:34px;height:34px;border:1px solid var(--line);background:none;cursor:pointer;color:var(--ink);
+    flex-shrink:0;
+  }
+  .theme-toggle:hover{border-color:var(--ink);}
+  .theme-toggle svg{width:16px;height:16px;}
+  .theme-toggle .icon-moon{display:none;}
+  [data-theme="dark"] .theme-toggle .icon-sun{display:none;}
+  [data-theme="dark"] .theme-toggle .icon-moon{display:block;}
+
+  /* ---------- Scroll reveal ---------- */
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease, transform .7s ease;}
+  .reveal.in-view{opacity:1;transform:none;}
+  .reveal-left{opacity:0;transform:translateX(-26px);transition:opacity .65s ease, transform .65s ease;}
+  .reveal-left.in-view{opacity:1;transform:none;}
+  .reveal-right{opacity:0;transform:translateX(26px);transition:opacity .65s ease, transform .65s ease;}
+  .reveal-right.in-view{opacity:1;transform:none;}
+  .reveal-scale{opacity:0;transform:scale(.88);transition:opacity .55s ease, transform .55s cubic-bezier(.2,.8,.3,1.2);}
+  .reveal-scale.in-view{opacity:1;transform:none;}
+  .reveal-rotate{opacity:0;transform:rotate(-4deg) translateY(10px);transition:opacity .6s ease, transform .6s cubic-bezier(.2,.8,.3,1.2);}
+  .reveal-rotate.in-view{opacity:1;transform:none;}
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-rotate{opacity:1;transform:none;}
+  }
+
+  @media (max-width:760px){
+    .nav-links{
+      position:fixed;inset:61px 0 auto 0;background:var(--paper-alt);
+      flex-direction:column;gap:0;border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    .nav-links.open{max-height:320px;}
+    .nav-links li{border-top:1px solid var(--line-soft);}
+    .nav-links a{display:block;padding:16px 32px;}
+    .nav-cta{display:none;}
+    .nav-toggle{display:block;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{padding:96px 0 0;}
+  .hero-grid{
+    display:grid;grid-template-columns:1.1fr 0.9fr;gap:48px;align-items:center;
+  }
+  @keyframes heroIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:none;}}
+  .hero-grid > div{animation:heroIn .8s ease both;}
+  .hero-photo-frame{animation:heroIn .8s ease .12s both;}
+  @media (prefers-reduced-motion: reduce){
+    .hero-grid > div, .hero-photo-frame{animation:none;}
+  }
+  .hero h1{
+    font-family:var(--disp);font-weight:700;
+    font-size:clamp(2.6rem, 5vw, 4.1rem);line-height:1.03;letter-spacing:-0.01em;
+  }
+  .hero .role{
+    font-family:var(--disp);font-weight:500;font-size:1.25rem;color:var(--blue);
+    margin-top:16px;
+  }
+  .hero p.lede{
+    max-width:52ch;margin-top:22px;color:var(--ink-soft);font-size:1.05rem;
+  }
+  .hero-actions{display:flex;gap:14px;margin-top:34px;flex-wrap:wrap;}
+  .btn{
+    font-family:var(--body);font-weight:500;font-size:0.92rem;
+    padding:13px 24px;text-decoration:none;display:inline-block;border:1px solid var(--ink);
+    transition:background .15s ease, color .15s ease, border-color .15s ease;
+  }
+  .btn-primary{background:var(--ink);color:var(--paper-alt);}
+  .btn-primary:hover{background:var(--blue);border-color:var(--blue);}
+  .btn-ghost{border-color:var(--line);color:var(--ink);}
+  .btn-ghost:hover{border-color:var(--ink);}
+
+  .hero-art{width:100%;}
+
+  .hero-photo-frame{position:relative;border:1px solid var(--line);}
+  .hero-photo{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);display:block;aspect-ratio:4/3.4;}
+  .hero-photo-tag{
+    position:absolute;left:0;bottom:0;background:var(--ink);color:var(--paper-alt);
+    font-family:var(--mono);font-size:0.68rem;padding:8px 12px;letter-spacing:0.03em;
+  }
+
+  .titleblock{
+    margin-top:72px;border-top:1px solid var(--ink);border-bottom:1px solid var(--line);
+  }
+  .titleblock .wrap{
+    display:grid;grid-template-columns:repeat(4,1fr);
+  }
+  .tb-field{padding:16px 24px;border-left:1px solid var(--line);}
+  .tb-field:first-child{border-left:none;padding-left:0;}
+  .tb-field .k{font-family:var(--mono);font-size:0.68rem;color:var(--ink-faint);letter-spacing:0.04em;}
+  .tb-field .v{font-family:var(--body);font-size:0.88rem;margin-top:5px;color:var(--ink);}
+
+  /* ---------- WhatsApp float ---------- */
+  .wa-float{
+    position:fixed;right:22px;bottom:22px;z-index:60;
+    width:52px;height:52px;border-radius:50%;
+    background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 4px 16px rgba(0,0,0,.35);text-decoration:none;
+    animation:waPulse 2.4s ease-in-out infinite;
+  }
+  .wa-float svg{width:26px;height:26px;}
+  .wa-float:hover{animation:none;transform:scale(1.08);}
+  @keyframes waPulse{
+    0%,100%{box-shadow:0 4px 16px rgba(37,211,102,.35);}
+    50%{box-shadow:0 4px 22px rgba(37,211,102,.65);}
+  }
+  @media (prefers-reduced-motion: reduce){.wa-float{animation:none;}}
+
+  /* ---------- Quick nav ---------- */
+  .quicknav{border-bottom:1px solid var(--line);}
+  .quicknav-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:1px;background:var(--line);}
+  .qn-item{
+    background:var(--paper-alt);color:var(--ink-soft);text-decoration:none;
+    display:flex;flex-direction:column;align-items:center;gap:10px;
+    padding:22px 8px;font-size:0.78rem;text-align:center;
+    opacity:0;transform:translateY(10px) scale(.94);
+    animation:qnIn .5s cubic-bezier(.2,.8,.3,1.2) forwards;
+    transition:transform .25s cubic-bezier(.2,.8,.3,1.3), background-color .25s ease, color .25s ease;
+  }
+  @keyframes qnIn{to{opacity:1;transform:none;}}
+  .qn-item:nth-child(1){animation-delay:.05s;}
+  .qn-item:nth-child(2){animation-delay:.11s;}
+  .qn-item:nth-child(3){animation-delay:.17s;}
+  .qn-item:nth-child(4){animation-delay:.23s;}
+  .qn-item:nth-child(5){animation-delay:.29s;}
+  .qn-item:nth-child(6){animation-delay:.35s;}
+  @media (prefers-reduced-motion: reduce){
+    .qn-item{animation:none;opacity:1;transform:none;}
+  }
+  .qn-item svg{width:26px;height:26px;transition:transform .3s ease;}
+  .qn-item:hover{background:var(--paper);color:var(--blue);transform:translateY(-4px) rotate(-1deg);}
+  .qn-item:hover svg{transform:scale(1.12) rotate(3deg);}
+  .qn-item:nth-child(even):hover{transform:translateY(-4px) rotate(1deg);}
+  @media (max-width:760px){.quicknav-grid{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:420px){.quicknav-grid{grid-template-columns:repeat(2,1fr);}}
+
+  /* ---------- Category filter tabs ---------- */
+  .filter-row{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:32px;}
+  .filter-btn{
+    font-family:var(--mono);font-size:0.76rem;padding:9px 16px;
+    border:1px solid var(--line);background:none;color:var(--ink-soft);cursor:pointer;
+    transition:all .25s ease;
+  }
+  .filter-btn:hover{border-color:var(--ink);color:var(--ink);}
+  .filter-btn.active{background:var(--ink);color:var(--paper-alt);border-color:var(--ink);}
+  .gallery-item{transition:opacity .35s ease, transform .35s ease;}
+  .gallery-item.filtered-out{opacity:0;transform:scale(.88);}
+  @media (max-width:760px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-art{order:-1;max-width:280px;margin:0 auto;}
+    .titleblock .wrap{grid-template-columns:1fr 1fr;}
+    .tb-field{border-left:none;border-top:1px solid var(--line);padding:14px 0;}
+    .tb-field:nth-child(odd){padding-right:16px;}
+    .tb-field:nth-child(even){padding-left:16px;border-left:1px solid var(--line);}
+    .tb-field:first-child,.tb-field:nth-child(2){border-top:none;}
+  }
+
+  section{padding:96px 0;}
+  section.tight{padding-top:64px;}
+  h2{
+    font-family:var(--disp);font-weight:600;font-size:clamp(1.7rem,3vw,2.3rem);
+    letter-spacing:-0.005em;max-width:24ch;
+  }
+  .section-head{margin-bottom:52px;}
+  .section-head p{color:var(--ink-soft);max-width:56ch;margin-top:14px;font-size:1rem;}
+
+  /* ---------- About ---------- */
+  #about{background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .about-grid{display:grid;grid-template-columns:0.7fr 1.3fr;gap:56px;}
+  .about-stat{border-top:1px solid var(--ink);padding-top:14px;margin-bottom:32px;}
+  .about-stat .num{font-family:var(--disp);font-weight:700;font-size:2.2rem;color:var(--blue);}
+  .about-stat .label{font-size:0.86rem;color:var(--ink-soft);margin-top:4px;}
+  .about-body p{color:var(--ink-soft);font-size:1.02rem;max-width:62ch;}
+  .about-body p + p{margin-top:18px;}
+  @media (max-width:760px){.about-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Experience ---------- */
+  .timeline{border-top:1px solid var(--line);}
+  .tl-item{
+    display:grid;grid-template-columns:200px 1fr;gap:32px;
+    padding:36px 0;border-bottom:1px solid var(--line);
+  }
+  .tl-when{font-family:var(--mono);font-size:0.82rem;color:var(--ink-faint);padding-top:4px;}
+  .tl-when .cur{color:var(--blue);}
+  .tl-role{font-family:var(--disp);font-weight:600;font-size:1.2rem;}
+  .tl-org{color:var(--blue);font-size:0.95rem;margin-top:2px;font-weight:500;}
+  .tl-loc{font-size:0.85rem;color:var(--ink-faint);margin-top:2px;}
+  .tl-list{margin-top:16px;list-style:none;}
+  .tl-list li{position:relative;padding-left:18px;color:var(--ink-soft);font-size:0.95rem;margin-top:9px;max-width:64ch;}
+  .tl-list li::before{content:'';position:absolute;left:0;top:0.55em;width:6px;height:1px;background:var(--ink-faint);}
+  @media (max-width:640px){.tl-item{grid-template-columns:1fr;gap:8px;}}
+
+  /* ---------- Skills ---------- */
+  .skills-grid{
+    display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+    background:var(--line);border:1px solid var(--line);
+  }
+  .skill-card{background:var(--paper-alt);padding:30px;}
+  .skill-card h3{font-family:var(--disp);font-size:1.02rem;font-weight:600;margin-bottom:14px;}
+  .skill-card ul{list-style:none;}
+  .skill-card li{font-size:0.9rem;color:var(--ink-soft);padding:6px 0;border-top:1px solid var(--line-soft);}
+  .skill-card li:first-child{border-top:none;}
+  .skill-card li b{color:var(--ink);font-weight:600;}
+  @media (max-width:900px){.skills-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:600px){.skills-grid{grid-template-columns:1fr;}}
+
+  .toolkit{margin-top:44px;}
+  .toolkit .k{font-family:var(--mono);font-size:0.78rem;color:var(--ink-faint);margin-bottom:14px;display:block;}
+  .chip-row{display:flex;flex-wrap:wrap;gap:10px;}
+  .chip{
+    font-size:0.85rem;padding:8px 14px;border:1px solid var(--line);color:var(--ink-soft);
+    background:var(--paper-alt);
+  }
+
+  /* ---------- Projects ---------- */
+  .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .proj-card{background:var(--paper-alt);padding:36px;display:flex;flex-direction:column;min-height:260px;}
+  .proj-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px;}
+  .proj-sheet{font-family:var(--mono);font-size:0.75rem;color:var(--blue);}
+  .proj-area{font-family:var(--mono);font-size:0.75rem;color:var(--ink-faint);}
+  .proj-card h3{font-family:var(--disp);font-weight:600;font-size:1.28rem;margin-top:16px;}
+  .proj-card .loc{font-size:0.85rem;color:var(--ink-faint);margin-top:3px;}
+  .proj-card p{margin-top:16px;color:var(--ink-soft);font-size:0.94rem;max-width:52ch;flex-grow:1;}
+  @media (max-width:760px){.projects-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Case studies ---------- */
+  .case-featured{
+    display:grid;grid-template-columns:1.1fr 1fr;gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-bottom:1px;
+  }
+  .case-featured-img{background:var(--paper);overflow:hidden;}
+  .case-featured-img img{width:100%;height:100%;min-height:280px;object-fit:cover;display:block;cursor:zoom-in;}
+  .case-featured-body{background:var(--paper-alt);padding:36px;display:flex;flex-direction:column;justify-content:center;}
+  .case-featured-body h3{font-family:var(--disp);font-weight:700;font-size:1.6rem;}
+  .case-featured-body .loc{font-size:0.88rem;color:var(--ink-faint);margin-top:6px;}
+  .case-fields{margin-top:22px;display:flex;flex-direction:column;gap:14px;}
+  .case-field{border-top:1px solid var(--line);padding-top:10px;}
+  .case-field .k{font-family:var(--mono);font-size:0.7rem;color:var(--blue);letter-spacing:0.04em;display:block;}
+  .case-field .v{font-size:0.92rem;color:var(--ink-soft);display:block;margin-top:4px;}
+  .case-compact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-top:none;}
+  .case-compact{background:var(--paper-alt);padding:32px;}
+  .case-compact h3{font-family:var(--disp);font-weight:600;font-size:1.15rem;}
+  .case-compact .loc{font-size:0.82rem;color:var(--ink-faint);margin-top:5px;}
+  .case-compact .case-fields{margin-top:16px;gap:12px;}
+  @media (max-width:760px){
+    .case-featured{grid-template-columns:1fr;}
+    .case-featured-img img{min-height:220px;}
+    .case-compact-grid{grid-template-columns:1fr;}
+  }
+
+  /* ---------- Featured video ---------- */
+  .video-feature{
+    display:grid;grid-template-columns:300px 1fr;gap:1px;background:var(--line);
+    border:1px solid var(--line);margin-bottom:32px;
+  }
+  .video-feature-media{background:#000;display:flex;align-items:center;justify-content:center;}
+  .video-feature-media video{width:100%;height:100%;max-height:560px;object-fit:cover;display:block;}
+  .video-feature-body{background:var(--paper-alt);padding:32px;display:flex;flex-direction:column;justify-content:center;}
+  @media (max-width:760px){
+    .video-feature{grid-template-columns:1fr;}
+    .video-feature-media video{max-height:440px;}
+  }
+
+  /* ---------- Work sample galleries ---------- */
+  .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);}
+  .gallery-grid.cols-2{grid-template-columns:repeat(2,1fr);}
+  .gallery-item{background:var(--paper-alt);display:flex;flex-direction:column;}
+  .gallery-item.wide{grid-column:span 2;}
+  .gallery-item img{width:100%;height:240px;object-fit:cover;display:block;background:var(--paper-alt);}
+  .gallery-item.tall img{height:340px;}
+  .gallery-item.wide img{height:320px;}
+  .gallery-cap{padding:14px 18px;border-top:1px solid var(--line);}
+  .gallery-cap .t{font-family:var(--disp);font-weight:600;font-size:0.98rem;}
+  .gallery-cap .m{font-family:var(--mono);font-size:0.72rem;color:var(--ink-faint);margin-top:4px;}
+  @media (max-width:900px){.gallery-grid{grid-template-columns:1fr 1fr;}.gallery-item.wide{grid-column:span 2;}}
+  @media (max-width:600px){.gallery-grid,.gallery-grid.cols-2{grid-template-columns:1fr;}.gallery-item.wide{grid-column:span 1;}}
+
+  .gallery-grid.dense{grid-template-columns:repeat(4,1fr);}
+  .gallery-grid.dense .gallery-item img{height:180px;}
+  .gallery-grid.dense .gallery-item.wide{grid-column:span 2;}
+  .gallery-grid.dense .gallery-cap{padding:10px 14px;}
+  .gallery-grid.dense .gallery-cap .t{font-size:0.86rem;}
+  .gallery-grid.dense .gallery-cap .m{font-size:0.65rem;}
+  @media (max-width:900px){.gallery-grid.dense{grid-template-columns:repeat(3,1fr);}}
+  @media (max-width:600px){.gallery-grid.dense{grid-template-columns:repeat(2,1fr);}.gallery-grid.dense .gallery-item.wide{grid-column:span 2;}}
+
+  /* ---------- Education ---------- */
+  .edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);}
+  .edu-card{background:var(--paper-alt);padding:30px;}
+  .edu-card .when{font-family:var(--mono);font-size:0.75rem;color:var(--ink-faint);}
+  .edu-card h3{font-family:var(--disp);font-weight:600;font-size:1.08rem;margin-top:10px;}
+  .edu-card .where{color:var(--blue);font-size:0.9rem;margin-top:2px;}
+  .edu-card p{margin-top:12px;color:var(--ink-soft);font-size:0.88rem;}
+  @media (max-width:640px){.edu-grid{grid-template-columns:1fr;}}
+
+  /* ---------- Contact / footer ---------- */
+  #contact{background:var(--deep);color:var(--paper-alt);border-top:1px solid var(--line);}
+  #contact h2{color:#fff;}
+  #contact .section-head p{color:var(--deep-text-soft);}
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;}
+  .contact-list{list-style:none;border-top:1px solid #333c45;}
+  .contact-list li{border-bottom:1px solid #333c45;}
+  .contact-list a{display:flex;justify-content:space-between;align-items:center;padding:20px 0;text-decoration:none;font-size:1.05rem;color:#fff;}
+  .contact-list .k{font-family:var(--mono);font-size:0.72rem;color:#7d8791;}
+  .contact-note{color:#a9b1b8;font-size:0.92rem;max-width:44ch;}
+  .contact-note b{color:#fff;}
+  @media (max-width:700px){.contact-grid{grid-template-columns:1fr;}}
+
+  footer{padding:28px 0;background:var(--deep);border-top:1px solid var(--deep-line);}
+  footer .wrap{display:flex;justify-content:space-between;color:#7d8791;font-size:0.8rem;flex-wrap:wrap;gap:8px;}
+  footer a{color:#a9b1b8;text-decoration:none;}
+  footer a:hover{color:#fff;}
+  /* ---------- Lightbox ---------- */
+  .gallery-item img{cursor:zoom-in;}
+  .lightbox-overlay{
+    position:fixed;inset:0;background:rgba(0,0,0,.94);z-index:300;
+    display:none;align-items:center;justify-content:center;padding:56px;
+    opacity:0;transition:opacity .25s ease;
+  }
+  .lightbox-overlay.open{display:flex;opacity:1;}
+  .lightbox-figure{max-width:100%;max-height:100%;display:flex;flex-direction:column;align-items:center;gap:14px;
+    transform:scale(.96);transition:transform .25s ease;}
+  .lightbox-overlay.open .lightbox-figure{transform:none;}
+  .lightbox-img{max-width:88vw;max-height:78vh;object-fit:contain;border:1px solid #333;background:#000;}
+  .lightbox-cap{color:#d8dadc;font-family:var(--body);font-size:0.9rem;text-align:center;}
+  .lightbox-close, .lightbox-nav{
+    position:fixed;background:none;border:1px solid #444;color:#fff;cursor:pointer;
+    display:flex;align-items:center;justify-content:center;transition:background-color .2s ease, border-color .2s ease;
+  }
+  .lightbox-close{top:22px;right:24px;width:40px;height:40px;font-size:1.6rem;line-height:1;}
+  .lightbox-nav{top:50%;transform:translateY(-50%);width:46px;height:46px;font-size:1.8rem;border-radius:50%;}
+  .lightbox-prev{left:16px;}
+  .lightbox-next{right:16px;}
+  .lightbox-close:hover, .lightbox-nav:hover{background:rgba(255,255,255,.1);border-color:#888;}
+  @media (max-width:640px){
+    .lightbox-overlay{padding:20px;}
+    .lightbox-nav{width:38px;height:38px;font-size:1.4rem;}
+  }
+
+  /* ---------- Print ---------- */
+  @media print{
+    header, .quicknav, .filter-row, .hero-actions, .theme-toggle, .nav-toggle,
+    .lightbox-overlay, footer, #contact .btn, .nav-cta, .video-feature{display:none !important;}
+    body{background:#fff !important;color:#000 !important;}
+    :root, [data-theme]{
+      --paper:#fff; --paper-alt:#fff; --ink:#000; --ink-soft:#222; --ink-faint:#555;
+      --line:#ccc; --line-soft:#eee; --blue:#1a3a6e; --red:#8a2a12; --deep:#111;
+    }
+    section{padding:24px 0 !important; break-inside:avoid;}
+    .gallery-grid, .gallery-grid.dense{grid-template-columns:repeat(3,1fr) !important;}
+    .gallery-item img{height:140px !important;}
+    a[href]::after{content:" (" attr(href) ")";font-size:0.7em;color:#555;}
+    .reveal, .reveal-left, .reveal-right, .reveal-scale, .reveal-rotate{opacity:1 !important;transform:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="#top" class="nav-mark">Abdelrhman Mohsen <span>/ BIM</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#work">Work</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="mailto:architect.abdelrhmanmohsen@gmail.com" class="nav-cta">Get in touch</a>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle day / night mode">
+      <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2.5 12h3M18.5 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+      <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+    </button>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <h1>Abdelrhman Mohsen</h1>
+          <div class="role">BIM Architect — Interior &amp; Exterior Designer</div>
+          <p class="lede">Four-plus years modeling residential, commercial, and healthcare developments across Egypt, Saudi Arabia, and the UAE — Revit-driven, LOD 350+, coordinated across architecture, structure, and MEP with zero construction-phase conflicts.</p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View selected work</a>
+            <a href="Abdelrhman_Mohsen_BIM_Architect_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+          </div>
+        </div>
+        <div class="hero-photo-frame">
+          <img class="hero-photo" src="img/profile.webp" alt="Portrait of Abdelrhman Mohsen">
+          <div class="hero-photo-tag">FIG. 01 — PORTRAIT</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="titleblock">
+    <div class="wrap">
+      <div class="tb-field">
+        <div class="k">LOCATION</div>
+        <div class="v">Egypt — open to relocation</div>
+      </div>
+      <div class="tb-field">
+        <div class="k">REGISTRATION</div>
+        <div class="v">SCE-eligible (Saudi Council of Engineers)</div>
+      </div>
+      <div class="tb-field">
+        <div class="k">ENGAGEMENT</div>
+        <div class="v">Remote, hybrid, or on-site</div>
+      </div>
+      <div class="tb-field">
+        <div class="k">AVAILABILITY</div>
+        <div class="v">GMT+2</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- QUICK NAV -->
+  <nav class="quicknav">
+    <div class="wrap">
+      <div class="quicknav-grid">
+        <a href="#bim" class="qn-item">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="7" y="7" width="26" height="26"/><path d="M7 16h26M16 7v26M24 16v16" stroke-dasharray="2 2"/><circle cx="20" cy="24" r="2.4" fill="currentColor" stroke="none"/></svg>
+          <span>BIM Documentation</span>
+        </a>
+        <a href="#exterior" class="qn-item">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 33V17l14-9 14 9v16"/><path d="M6 33h28"/><path d="M14 33V22h5v11M23 33V22h5v11"/></svg>
+          <span>Exterior Design</span>
+        </a>
+        <a href="#interior" class="qn-item">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 30v-8a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v8"/><path d="M6 30h28M9 22v-3a2 2 0 0 1 2-2h4M9 30v3M31 30v3"/><circle cx="25" cy="14" r="2.4"/></svg>
+          <span>Interior Design</span>
+        </a>
+        <a href="#experience" class="qn-item">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M6 12h28M6 20h28M6 28h16" stroke-dasharray="1 4"/><circle cx="6" cy="12" r="2"/><circle cx="6" cy="20" r="2"/><circle cx="6" cy="28" r="2"/></svg>
+          <span>Experience</span>
+        </a>
+        <a href="#skills" class="qn-item">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="20" cy="20" r="13"/><path d="M20 11v18M11 20h18" stroke-dasharray="1 3"/><circle cx="20" cy="20" r="3.4"/></svg>
+          <span>Skills</span>
+        </a>
+        <a href="#contact" class="qn-item">
+          <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="6" y="10" width="28" height="20"/><path d="M6 12l14 10 14-10"/></svg>
+          <span>Contact</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <div class="about-stat">
+            <div class="num">150,000+ m²</div>
+            <div class="label">largest single BIM lifecycle managed, zero clash conflicts at construction</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">4+ yrs</div>
+            <div class="label">across EG, KSA &amp; UAE — residential, commercial, healthcare</div>
+          </div>
+          <div class="about-stat">
+            <div class="num">10+</div>
+            <div class="label">private clients served through independent practice</div>
+          </div>
+        </div>
+        <div class="about-body">
+          <p>I work at the point where architectural intent has to survive contact with construction — translating design decisions into coordinated, buildable Revit models at LOD 350 and above, and keeping architecture, structure, and MEP disciplines talking to each other before conflicts reach site.</p>
+          <p>My background spans full BIM lifecycles: from master planning and facade design, through clash-free multidisciplinary coordination, to construction-ready shop drawings, automated BOQ extraction, and statutory municipal licensing. I'm comfortable leading that process on large developments or handling it end-to-end for private clients as an independent architect.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Professional experience</h2>
+      </div>
+      <div class="timeline">
+
+        <div class="tl-item">
+          <div class="tl-when">06/2025 — <span class="cur">Present</span><br>Remote</div>
+          <div>
+            <div class="tl-role">BIM Architect <span style="color:var(--ink-faint);font-weight:400;font-size:0.85rem;">— Part-time</span></div>
+            <div class="tl-org">EDEC</div>
+            <ul class="tl-list">
+              <li>Direct high-precision shop drawings and full project documentation for multi-thousand m² luxury estates.</li>
+              <li>Deliver architectural BIM modeling and bespoke facade designs for institutional and healthcare facilities.</li>
+              <li>Produce construction-ready shop drawings and data-driven BOQs to streamline the design-to-procurement transition.</li>
+              <li>Manage full statutory licensing packages for municipal approvals and site execution plans.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">09/2024 — <span class="cur">Present</span><br>New Damietta</div>
+          <div>
+            <div class="tl-role">BIM Architect <span style="color:var(--ink-faint);font-weight:400;font-size:0.85rem;">— Full-time</span></div>
+            <div class="tl-org">Al-ORABI Engineering Consulting</div>
+            <ul class="tl-list">
+              <li>Spearhead site circulation and landmark architectural conceptualization for large administrative complexes.</li>
+              <li>Direct advanced modeling and proactive Arch/Str/MEP clash coordination at LOD 350+ to eliminate conflicts before construction.</li>
+              <li>Leverage Revit schedules for blockwork and finishes to automate quantity estimation and streamline procurement.</li>
+              <li>Oversee projects from concept through construction-ready documentation and licensing.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">02/2022 — 06/2024<br>Remote</div>
+          <div>
+            <div class="tl-role">Architect <span style="color:var(--ink-faint);font-weight:400;font-size:0.85rem;">— Part-time</span></div>
+            <div class="tl-org">DIZ Studio</div>
+            <ul class="tl-list">
+              <li>Conceptualized high-performance external facades for residential and commercial developments.</li>
+              <li>Delivered comprehensive shop drawings ensuring seamless transitions from design intent to construction.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">07/2023 — 08/2024<br>New Damietta</div>
+          <div>
+            <div class="tl-role">Architect <span style="color:var(--ink-faint);font-weight:400;font-size:0.85rem;">— Full-time</span></div>
+            <div class="tl-org">Vision International Group</div>
+            <ul class="tl-list">
+              <li>Led schematic design and multidisciplinary BIM coordination, resolving structural-architectural conflicts early.</li>
+              <li>Developed complex Revit models for large-scale park projects, reconciling intricate site contours with design intent.</li>
+              <li>Authored technical documentation and licensing packages ensuring full regulatory compliance.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="tl-item">
+          <div class="tl-when">2022 — <span class="cur">Present</span><br>Remote</div>
+          <div>
+            <div class="tl-role">Architect <span style="color:var(--ink-faint);font-weight:400;font-size:0.85rem;">— Freelance</span></div>
+            <div class="tl-org">Independent practice</div>
+            <ul class="tl-list">
+              <li>Partner with private clients and architectural firms on bespoke interior and exterior design solutions.</li>
+              <li>Delivered BIM modeling, interior &amp; exterior design, and technical documentation for 10+ private clients across Egypt and the GCC.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" style="background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills &amp; standards</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>BIM management &amp; collaboration</h3>
+          <ul>
+            <li><b>Cloud platforms:</b> Autodesk BIM 360, Autodesk Construction Cloud</li>
+            <li><b>Standards:</b> ISO 19650 information delivery protocols</li>
+            <li><b>OpenBIM:</b> IFC and BCF interdisciplinary data exchange</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Digital coordination</h3>
+          <ul>
+            <li><b>Modeling:</b> Revit at LOD 350+, parametric family creation</li>
+            <li><b>Clash detection:</b> Arch/Str/MEP resolution via Navisworks</li>
+            <li><b>4D/5D BIM:</b> TimeLiner scheduling, BOQ &amp; cost extraction</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Design &amp; spatial intelligence</h3>
+          <ul>
+            <li><b>Architectural design:</b> interior, exterior, facade, landscape</li>
+            <li><b>Master planning:</b> circulation, zoning, density optimization</li>
+            <li><b>Documentation:</b> shop drawings, municipal &amp; tender packages</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="toolkit">
+        <span class="k">SOFTWARE &amp; PLATFORM TOOLKIT</span>
+        <div class="chip-row">
+          <span class="chip">Revit — Expert</span>
+          <span class="chip">Navisworks — Advanced</span>
+          <span class="chip">AutoCAD</span>
+          <span class="chip">3ds Max</span>
+          <span class="chip">Lumion</span>
+          <span class="chip">V-Ray</span>
+          <span class="chip">Adobe Photoshop</span>
+          <span class="chip">BIM 360 / ACC</span>
+        </div>
+      </div>
+
+      <div class="toolkit">
+        <span class="k">LANGUAGES</span>
+        <div class="chip-row">
+          <span class="chip">Arabic — Native</span>
+          <span class="chip">English — Professional working proficiency</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>A sample of the work</h2>
+        <p>Six projects from a wider portfolio, spanning residential communities, mixed-use hubs, private villas, and healthcare infrastructure.</p>
+      </div>
+
+      <div class="projects-grid">
+        <div class="proj-card">
+          <div class="proj-top"><span class="proj-area">150,000 m²</span></div>
+          <h3>La-Mer Compound</h3>
+          <div class="loc">Residential community · 30+ structures, 3 typologies</div>
+          <p>Managed full-scope BIM development at LOD 350+ across villas, apartments, and townhouses, coordinating Arch/Str/MEP disciplines with zero construction-phase conflicts.</p>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top"><span class="proj-area">30,000 m²</span></div>
+          <h3>Lamar Gate</h3>
+          <div class="loc">Mixed-use administrative hub</div>
+          <p>Led urban master planning and BIM documentation, delivering construction-ready packages including facade systems, site circulation, and full municipal licensing drawings.</p>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top"><span class="proj-area">10,000 m²</span></div>
+          <h3>Square Business Hub</h3>
+          <div class="loc">Commercial hub</div>
+          <p>Directed the full BIM lifecycle from concept through construction-ready shop drawings, automated BOQ extraction, and statutory municipal licensing approval.</p>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top"><span class="proj-area">5,000 m²</span></div>
+          <h3>Meydan Villa</h3>
+          <div class="loc">High-end private villa complex</div>
+          <p>Spearheaded the architectural redesign and full BIM documentation, delivering LOD 350 models with bespoke interior finish schedules and construction-ready shop drawings.</p>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top"><span class="proj-area">Riyadh, KSA</span></div>
+          <h3>Supply Chain — Healthcare</h3>
+          <div class="loc">Institutional healthcare facility</div>
+          <p>Delivered full-cycle BIM modeling and bespoke facade designs for a sector aligned with Saudi Vision 2030 health infrastructure targets, integrating design and procurement.</p>
+        </div>
+        <div class="proj-card">
+          <div class="proj-top"><span class="proj-area">Landscape</span></div>
+          <h3>Royal Meadows</h3>
+          <div class="loc">Large-scale park development</div>
+          <p>Developed advanced Revit models reconciling complex site contours across multiple landscape zones, with full Arch/Civil coordination.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="case-studies" style="background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Case studies</h2>
+        <p>A closer look at three projects from the list above — the scope, the role, and the outcome.</p>
+      </div>
+
+      <div class="case-featured">
+        <div class="case-featured-img">
+          <img src="img/ext-hero.webp" alt="Exterior render of Square Business Hub, a contemporary commercial hub" loading="lazy">
+        </div>
+        <div class="case-featured-body">
+          <h3>Square Business Hub</h3>
+          <div class="loc">Commercial hub · New Damietta, Egypt · 10,000 m² · 2025</div>
+          <div class="case-fields">
+            <div class="case-field"><span class="k">Role</span><span class="v">BIM lifecycle lead, concept to construction</span></div>
+            <div class="case-field"><span class="k">Scope</span><span class="v">Shop drawings, automated BOQ extraction, municipal licensing</span></div>
+            <div class="case-field"><span class="k">Outcome</span><span class="v">Statutory municipal licensing approval secured</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="case-compact-grid">
+        <div class="case-compact">
+          <h3>La-Mer Compound</h3>
+          <div class="loc">Residential community · 30+ structures, 3 typologies · 150,000 m²</div>
+          <div class="case-fields">
+            <div class="case-field"><span class="k">Role</span><span class="v">Managed full-scope BIM development at LOD 350+</span></div>
+            <div class="case-field"><span class="k">Scope</span><span class="v">Villas, apartments &amp; townhouses — Arch/Str/MEP coordination</span></div>
+            <div class="case-field"><span class="k">Outcome</span><span class="v">Zero construction-phase conflicts</span></div>
+          </div>
+        </div>
+        <div class="case-compact">
+          <h3>Meydan Villa</h3>
+          <div class="loc">High-end private villa complex · 5,000 m²</div>
+          <div class="case-fields">
+            <div class="case-field"><span class="k">Role</span><span class="v">Spearheaded the architectural redesign</span></div>
+            <div class="case-field"><span class="k">Scope</span><span class="v">Full BIM documentation, LOD 350 models, bespoke interior finish schedules</span></div>
+            <div class="case-field"><span class="k">Outcome</span><span class="v">Construction-ready shop drawings delivered</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BIM DOCUMENTATION GALLERY -->
+  <section id="bim" style="background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Work samples — BIM</h2>
+        <p>The full working set from real Revit and Navisworks projects: annotated plans, elevations, sections, 3D models, schedules, shop drawings, coordination, and the CDE workflow behind them.</p>
+      </div>
+      <div class="filter-row"><button class="filter-btn active" data-filter-group="bim" data-filter="all">All</button><button class="filter-btn" data-filter-group="bim" data-filter="documentation">Documentation</button><button class="filter-btn" data-filter-group="bim" data-filter="coordination">Coordination & Clash</button><button class="filter-btn" data-filter-group="bim" data-filter="schedules">Schedules & Shop Drawings</button></div>
+      <div class="gallery-grid dense" id="bim-grid">
+        <div class="gallery-item wide" data-category="documentation">
+          <img src="img/floorplan.webp" alt="Fully annotated Revit ground floor plan" loading="lazy">
+          <div class="gallery-cap"><div class="t">Ground floor plan</div><div class="m">REVIT · LOD 350 · 1:100</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-roof-plan.webp" alt="Roof plan drawing" loading="lazy">
+          <div class="gallery-cap"><div class="t">Roof plan</div><div class="m">REVIT · LOD 350</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-basement-plan.webp" alt="Basement level plan drawing" loading="lazy">
+          <div class="gallery-cap"><div class="t">Basement plan</div><div class="m">REVIT · LOD 350</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-plan-ground.webp" alt="Ground floor plan from complete plan set" loading="lazy">
+          <div class="gallery-cap"><div class="t">Ground floor — plan set</div><div class="m">COMPLETE PLAN SET</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-plan-first.webp" alt="First floor plan from complete plan set" loading="lazy">
+          <div class="gallery-cap"><div class="t">First floor — plan set</div><div class="m">MAIN ENTRANCE LEVEL</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-plan-roof-set.webp" alt="Roof plan from complete plan set" loading="lazy">
+          <div class="gallery-cap"><div class="t">Roof plan — plan set</div><div class="m">SERVICES & TERRACE</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/elevation.webp" alt="West elevation drawing with material callouts" loading="lazy">
+          <div class="gallery-cap"><div class="t">West elevation</div><div class="m">MATERIAL CALLOUTS</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-elev-north.webp" alt="North elevation drawing" loading="lazy">
+          <div class="gallery-cap"><div class="t">North elevation</div><div class="m">SIDE ELEVATION</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-elev-east.webp" alt="East elevation drawing" loading="lazy">
+          <div class="gallery-cap"><div class="t">East elevation</div><div class="m">SERVICE ELEVATION</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-elev-south.webp" alt="South elevation drawing" loading="lazy">
+          <div class="gallery-cap"><div class="t">South elevation</div><div class="m">MAIN ENTRANCE</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/model3d.webp" alt="3D isometric Revit model exterior view" loading="lazy">
+          <div class="gallery-cap"><div class="t">3D exterior view</div><div class="m">LOD 350+ REVIT MODEL</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-3d-section.webp" alt="3D interior section cutaway of a villa" loading="lazy">
+          <div class="gallery-cap"><div class="t">3D interior section</div><div class="m">CUTAWAY PERSPECTIVE</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-3d-composite.webp" alt="Architectural and structural composite 3D model" loading="lazy">
+          <div class="gallery-cap"><div class="t">Arch + structural composite</div><div class="m">3D MODEL</div></div>
+        </div>
+        <div class="gallery-item wide" data-category="documentation">
+          <img src="img/exploded.webp" alt="Exploded axonometric diagram of a building" loading="lazy">
+          <div class="gallery-cap"><div class="t">Exploded axonometric</div><div class="m">MULTI-LEVEL BREAKDOWN</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-elev-annotated-n.webp" alt="Annotated north elevation with dimensions" loading="lazy">
+          <div class="gallery-cap"><div class="t">North elevation, annotated</div><div class="m">TECHNICAL DOCUMENTATION</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-section-aa.webp" alt="Building section A-A through staircase core" loading="lazy">
+          <div class="gallery-cap"><div class="t">Section A-A</div><div class="m">THROUGH STAIRCASE CORE</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-section-bb.webp" alt="Building section B-B cross section" loading="lazy">
+          <div class="gallery-cap"><div class="t">Section B-B</div><div class="m">CROSS SECTION</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-detail-cladding.webp" alt="Wall section detail showing cladding system" loading="lazy">
+          <div class="gallery-cap"><div class="t">Wall detail — cladding</div><div class="m">LOD 350 PRECISION</div></div>
+        </div>
+        <div class="gallery-item" data-category="documentation">
+          <img src="img/bim-detail-facade.webp" alt="Wall section detail showing facade system" loading="lazy">
+          <div class="gallery-cap"><div class="t">Wall detail — facade</div><div class="m">CONSTRUCTION-READY</div></div>
+        </div>
+        <div class="gallery-item" data-category="schedules">
+          <img src="img/schedule.webp" alt="Revit wall material takeoff schedule" loading="lazy">
+          <div class="gallery-cap"><div class="t">Wall material takeoff</div><div class="m">AUTOMATED BOQ</div></div>
+        </div>
+        <div class="gallery-item" data-category="schedules">
+          <img src="img/bim-door-schedule.webp" alt="Revit door schedule" loading="lazy">
+          <div class="gallery-cap"><div class="t">Door schedule</div><div class="m">SIZE, TYPE & HARDWARE</div></div>
+        </div>
+        <div class="gallery-item" data-category="schedules">
+          <img src="img/bim-window-schedule.webp" alt="Revit window schedule" loading="lazy">
+          <div class="gallery-cap"><div class="t">Window schedule</div><div class="m">SIZE & COUNT</div></div>
+        </div>
+        <div class="gallery-item" data-category="schedules">
+          <img src="img/bim-shopdrawing-facade.webp" alt="Shop drawing of exterior facade elevation" loading="lazy">
+          <div class="gallery-cap"><div class="t">Shop drawing — facade</div><div class="m">CONSTRUCTION DOCUMENTATION</div></div>
+        </div>
+        <div class="gallery-item" data-category="schedules">
+          <img src="img/bim-shopdrawing-pool.webp" alt="Shop drawing section of a swimming pool" loading="lazy">
+          <div class="gallery-cap"><div class="t">Shop drawing — pool section</div><div class="m">DETAIL DRAWING</div></div>
+        </div>
+        <div class="gallery-item" data-category="schedules">
+          <img src="img/bim-shopdrawing-facade2.webp" alt="Shop drawing of facade with lighting details" loading="lazy">
+          <div class="gallery-cap"><div class="t">Shop drawing — facade detail</div><div class="m">PANEL SYSTEM</div></div>
+        </div>
+        <div class="gallery-item" data-category="coordination">
+          <img src="img/navisworks.webp" alt="Navisworks screenshot of federated model" loading="lazy">
+          <div class="gallery-cap"><div class="t">Navisworks coordination</div><div class="m">FEDERATED ARC/STR/MEP</div></div>
+        </div>
+        <div class="gallery-item" data-category="coordination">
+          <img src="img/bim-clash-columns.webp" alt="Clash detection before and after — ceiling vs columns" loading="lazy">
+          <div class="gallery-cap"><div class="t">Clash — ceiling vs. columns</div><div class="m">BEFORE / AFTER</div></div>
+        </div>
+        <div class="gallery-item" data-category="coordination">
+          <img src="img/bim-clash-mep.webp" alt="Clash detection before and after — MEP terminals vs pipes" loading="lazy">
+          <div class="gallery-cap"><div class="t">Clash — MEP vs. pipes</div><div class="m">BEFORE / AFTER</div></div>
+        </div>
+        <div class="gallery-item" data-category="coordination">
+          <img src="img/bim-clash-curtainwall.webp" alt="Clash detection before and after — curtain wall vs devices" loading="lazy">
+          <div class="gallery-cap"><div class="t">Clash — curtain wall vs. devices</div><div class="m">BEFORE / AFTER</div></div>
+        </div>
+        <div class="gallery-item" data-category="coordination">
+          <img src="img/cde.webp" alt="Common data environment folder structure diagram" loading="lazy">
+          <div class="gallery-cap"><div class="t">CDE folder structure</div><div class="m">ISO 19650</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXTERIOR GALLERY -->
+  <section id="exterior">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Work samples — Exterior design</h2>
+        <p>Contemporary and classical facades, master plans, and landscape work across Egypt, Saudi Arabia, and Qatar.</p>
+      </div>
+
+      <div class="video-feature">
+        <div class="video-feature-media">
+          <video src="img/modern-facade.mp4" poster="img/modern-facade-poster.webp" muted loop playsinline autoplay controls preload="metadata"></video>
+        </div>
+        <div class="video-feature-body">
+          <div style="font-family:var(--mono);font-size:0.72rem;color:var(--blue);letter-spacing:0.04em;margin-bottom:14px;">FEATURED · VIDEO WALKTHROUGH</div>
+          <h3 style="font-family:var(--disp);font-weight:700;font-size:1.5rem;">Modern villa facade</h3>
+          <div class="loc" style="font-size:0.88rem;color:var(--ink-faint);margin-top:6px;">Cinematic exterior render — day-to-dusk lighting study</div>
+          <p style="margin-top:18px;color:var(--ink-soft);font-size:0.94rem;max-width:44ch;">A short walkthrough render of a contemporary villa facade — massing, material palette, and landscape lighting shown in motion rather than a single still frame.</p>
+        </div>
+      </div>
+
+      <div class="filter-row"><button class="filter-btn active" data-filter-group="exterior" data-filter="all">All</button><button class="filter-btn" data-filter-group="exterior" data-filter="modern">Modern</button><button class="filter-btn" data-filter-group="exterior" data-filter="classical">Classical</button><button class="filter-btn" data-filter-group="exterior" data-filter="masterplan">Master Plan & Landscape</button></div>
+      <div class="gallery-grid dense" id="ext-grid">
+        <div class="gallery-item wide" data-category="modern">
+          <img src="img/ext-hero.webp" alt="Exterior render of a contemporary commercial hub street facade" loading="lazy">
+          <div class="gallery-cap"><div class="t">Square Business Hub</div><div class="m">NEW DAMIETTA, EGYPT · 10,000 M² · 2025</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-villa108.webp" alt="Contemporary villa exterior render, Saudi Arabia" loading="lazy">
+          <div class="gallery-cap"><div class="t">Villa 108 — Contemporary</div><div class="m">MODERN · SAUDI ARABIA</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-compound-unit.webp" alt="Compound residential unit exterior render, Egypt" loading="lazy">
+          <div class="gallery-cap"><div class="t">Compound unit</div><div class="m">RESIDENTIAL · EGYPT</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-mixeduse.webp" alt="Mixed-use residential building exterior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Mixed-use building</div><div class="m">RESIDENTIAL</div></div>
+        </div>
+        <div class="gallery-item" data-category="classical">
+          <img src="img/ext-villa-classical-day.webp" alt="Classical style villa exterior render, daylight" loading="lazy">
+          <div class="gallery-cap"><div class="t">Classical villa, daylight</div><div class="m">CLASSICAL STYLE</div></div>
+        </div>
+        <div class="gallery-item" data-category="classical">
+          <img src="img/ext-villa-classical-night.webp" alt="Classical style villa exterior render, night" loading="lazy">
+          <div class="gallery-cap"><div class="t">Classical villa, night</div><div class="m">NIGHT RENDER</div></div>
+        </div>
+        <div class="gallery-item" data-category="classical">
+          <img src="img/ext-villa-classical.webp" alt="Classical style villa street view render, Qatar" loading="lazy">
+          <div class="gallery-cap"><div class="t">M3mar Villa</div><div class="m">CLASSICAL · QATAR · 600 M²</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-villa-contemporary-qatar.webp" alt="Contemporary villa row exterior render, Qatar" loading="lazy">
+          <div class="gallery-cap"><div class="t">Villa — Contemporary</div><div class="m">QATAR · 400 M²</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-estra7a.webp" alt="ESTRA7A building exterior render, Saudi Arabia" loading="lazy">
+          <div class="gallery-cap"><div class="t">ESTRA7A</div><div class="m">SAUDI ARABIA · 350 M²</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-commercial-facade.webp" alt="Commercial facade exterior render, New Damietta" loading="lazy">
+          <div class="gallery-cap"><div class="t">Commercial facade</div><div class="m">NEW DAMIETTA</div></div>
+        </div>
+        <div class="gallery-item" data-category="masterplan">
+          <img src="img/ext-masterplan-aerial.webp" alt="Aerial master plan render, Egypt" loading="lazy">
+          <div class="gallery-cap"><div class="t">Master plan, aerial</div><div class="m">EGYPT · 50,000 M²</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-mall-night.webp" alt="Mall exterior render at night, New Damietta" loading="lazy">
+          <div class="gallery-cap"><div class="t">Mall, night render</div><div class="m">NEW DAMIETTA · 400 M²</div></div>
+        </div>
+        <div class="gallery-item" data-category="classical">
+          <img src="img/ext-building-cairo.webp" alt="Classical style residential building exterior render, Cairo" loading="lazy">
+          <div class="gallery-cap"><div class="t">Residential building</div><div class="m">CLASSICAL · CAIRO · 400 M²</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/ext-residential-lounge.webp" alt="Residential street-level exterior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Residential, street level</div><div class="m">STREET LEVEL VIEW</div></div>
+        </div>
+        <div class="gallery-item" data-category="masterplan">
+          <img src="img/ext-pool-landscape.webp" alt="Landscape design with pool and outdoor lounge" loading="lazy">
+          <div class="gallery-cap"><div class="t">Landscape — pool & lounge</div><div class="m">ESTRA7A</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INTERIOR GALLERY -->
+  <section id="interior" style="background:var(--paper-alt);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Work samples — Interior design</h2>
+        <p>Luxury residential and commercial interiors — bedrooms, living and dining spaces, offices, and retail fit-outs.</p>
+      </div>
+      <div class="filter-row"><button class="filter-btn active" data-filter-group="interior" data-filter="all">All</button><button class="filter-btn" data-filter-group="interior" data-filter="modern">Modern</button><button class="filter-btn" data-filter-group="interior" data-filter="neoclassic">Neo-Classic</button><button class="filter-btn" data-filter-group="interior" data-filter="commercial">Commercial & Retail</button></div>
+      <div class="gallery-grid dense" id="int-grid">
+        <div class="gallery-item wide" data-category="modern">
+          <img src="img/int-bedroom.webp" alt="Modern luxury master bedroom interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Master suite</div><div class="m">YASSER VILLA · SAUDI · MODERN</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-entry-hall.webp" alt="Entry hall interior render with mirror" loading="lazy">
+          <div class="gallery-cap"><div class="t">Entry hall</div><div class="m">LUXURY RESIDENTIAL</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-cozy-living.webp" alt="Cozy living room interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Cozy living room</div><div class="m">WARM TEXTURES</div></div>
+        </div>
+        <div class="gallery-item" data-category="neoclassic">
+          <img src="img/int-hallway-marble.webp" alt="Hallway with marble columns interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Hallway, marble columns</div><div class="m">LUXURY FINISH</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-bedroom-wood.webp" alt="Bedroom interior render with wood paneling" loading="lazy">
+          <div class="gallery-cap"><div class="t">Bedroom, wood paneling</div><div class="m">CONTEMPORARY</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-bedroom-warm.webp" alt="Guest bedroom interior render, neutral tones" loading="lazy">
+          <div class="gallery-cap"><div class="t">Guest bedroom</div><div class="m">NEUTRAL & WARM TONES</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-bathroom-gold.webp" alt="Luxury bathroom interior render with gold accents" loading="lazy">
+          <div class="gallery-cap"><div class="t">Bathroom, luxury finish</div><div class="m">STONE & GLASS DETAILS</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-living-lshape.webp" alt="Contemporary living room interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Living room, contemporary</div><div class="m">L-SHAPED SEATING</div></div>
+        </div>
+        <div class="gallery-item" data-category="neoclassic">
+          <img src="img/int-dining.webp" alt="Neo classic dining room interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Dining room</div><div class="m">NEO-CLASSIC</div></div>
+        </div>
+        <div class="gallery-item" data-category="commercial">
+          <img src="img/int-private-office.webp" alt="Private office space interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Private office space</div><div class="m">FUNCTIONAL CONTEMPORARY</div></div>
+        </div>
+        <div class="gallery-item" data-category="commercial">
+          <img src="img/int-meeting-room.webp" alt="Meeting room interior render with long table" loading="lazy">
+          <div class="gallery-cap"><div class="t">Meeting room</div><div class="m">CORPORATE INTERIOR</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-reading-corner.webp" alt="Reading corner interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Reading corner</div><div class="m">DETAIL SHOT</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-living-shelving.webp" alt="Living room with wood shelving interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Living room, wood shelving</div><div class="m">MATERIAL DETAIL</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-rest-zone.webp" alt="Rest and reading zone interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Rest / reading zone</div><div class="m">FOCUSED AMBIANCE</div></div>
+        </div>
+        <div class="gallery-item" data-category="commercial">
+          <img src="img/int-retail-coffee.webp" alt="Retail coffee counter interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Retail — coffee counter</div><div class="m">LUXURY FINISH</div></div>
+        </div>
+        <div class="gallery-item" data-category="commercial">
+          <img src="img/int-retail-boutique.webp" alt="Retail boutique shelving interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Retail — boutique shelving</div><div class="m">STONE & GLASS DETAILS</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-living-fireplace.webp" alt="Living room with fireplace interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Living room, fireplace</div><div class="m">FOCUSED AMBIANCE</div></div>
+        </div>
+        <div class="gallery-item" data-category="modern">
+          <img src="img/int-living-dark-art.webp" alt="Living room with dark palette interior render" loading="lazy">
+          <div class="gallery-cap"><div class="t">Living room, dark palette</div><div class="m">CONTEMPORARY</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Education</h2>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="when">09/2018 — 05/2023 · Mansoura</div>
+          <h3>Bachelor of Architecture</h3>
+          <div class="where">Faculty of Engineering, Mansoura University</div>
+          <p>Degree recognized for Saudi Council of Engineers (SCE) registration eligibility.</p>
+        </div>
+        <div class="edu-card">
+          <div class="when">08/2024 — 04/2025 · Online</div>
+          <h3>Architectural BIM Diploma</h3>
+          <div class="where">KAITECH Academy</div>
+          <p>Focus on advanced Revit, Navisworks coordination, and BIM lifecycle management.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Let's coordinate the next one</h2>
+        <p>Open to remote, hybrid, and on-site BIM &amp; architecture roles — available GMT+2.</p>
+      </div>
+      <div class="contact-grid">
+        <ul class="contact-list">
+          <li>
+            <a href="mailto:architect.abdelrhmanmohsen@gmail.com">
+              <span>architect.abdelrhmanmohsen@gmail.com</span>
+              <span class="k">EMAIL</span>
+            </a>
+          </li>
+          <li>
+            <a href="tel:+201092083829">
+              <span>+20 109 208 3829</span>
+              <span class="k">PHONE</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/201092083829" target="_blank" rel="noopener">
+              <span>+20 109 208 3829</span>
+              <span class="k">WHATSAPP</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/abdelrhman-mohsen-bimarchitect" target="_blank" rel="noopener">
+              <span>linkedin.com/in/abdelrhman-mohsen-bimarchitect</span>
+              <span class="k">LINKEDIN</span>
+            </a>
+          </li>
+        </ul>
+        <p class="contact-note"><b>Based in Egypt, open to relocation.</b> SCE-eligible for registration with the Saudi Council of Engineers. Working hours align with GMT+2, with flexibility for GCC-based teams.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="year"></span> Abdelrhman Mohsen</span>
+    <a href="#top">Back to top ↑</a>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+  <figure class="lightbox-figure">
+    <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    <figcaption class="lightbox-cap" id="lightboxCap"></figcaption>
+  </figure>
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+</div>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Day / night toggle
+  const root = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  root.setAttribute('data-theme', 'dark');
+  themeToggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+  });
+
+  // Scroll-triggered reveal animation — varied per element type
+  const revealGroups = [
+    { sel: '.section-head, .tb-field, .contact-list li', cls: 'reveal' },
+    { sel: '.tl-item', cls: 'reveal-left' },
+    { sel: '.edu-card', cls: 'reveal-right' },
+    { sel: '.gallery-item, .about-stat, .case-featured, .case-compact, .video-feature', cls: 'reveal-scale' },
+    { sel: '.proj-card, .skill-card', cls: 'reveal-rotate' },
+  ];
+  const allRevealEls = [];
+  revealGroups.forEach(({ sel, cls }) => {
+    document.querySelectorAll(sel).forEach((el, i) => {
+      el.classList.add(cls);
+      el.style.transitionDelay = (i % 5) * 60 + 'ms';
+      allRevealEls.push(el);
+    });
+  });
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    allRevealEls.forEach((el) => io.observe(el));
+  } else {
+    allRevealEls.forEach((el) => el.classList.add('in-view'));
+  }
+
+  // Count-up animation for the About stats
+  const statEls = document.querySelectorAll('.about-stat .num');
+  const animateCount = (el) => {
+    const raw = el.textContent.trim();
+    const match = raw.match(/[\d,]+/);
+    if (!match) return;
+    const target = parseInt(match[0].replace(/,/g, ''), 10);
+    const prefix = raw.slice(0, match.index);
+    const suffix = raw.slice(match.index + match[0].length);
+    const duration = 900;
+    const start = performance.now();
+    const step = (now) => {
+      const t = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - t, 3);
+      const value = Math.round(target * eased);
+      el.textContent = prefix + value.toLocaleString('en-US') + suffix;
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  };
+  if ('IntersectionObserver' in window) {
+    const statIo = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          animateCount(entry.target);
+          statIo.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    statEls.forEach((el) => statIo.observe(el));
+  }
+
+  // Category filter tabs (Exterior / Interior galleries)
+  document.querySelectorAll('.filter-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const group = btn.dataset.filterGroup;
+      const filter = btn.dataset.filter;
+      document.querySelectorAll(`.filter-btn[data-filter-group="${group}"]`).forEach((b) => b.classList.remove('active'));
+      btn.classList.add('active');
+      const gridIdMap = { exterior: 'ext-grid', interior: 'int-grid', bim: 'bim-grid' };
+      const grid = document.getElementById(gridIdMap[group]);
+      grid.querySelectorAll('.gallery-item').forEach((item) => {
+        const match = filter === 'all' || item.dataset.category === filter;
+        item.classList.toggle('filtered-out', !match);
+      });
+    });
+  });
+
+  const navToggle = document.getElementById('navToggle');
+  const navLinks = document.getElementById('navLinks');
+  navToggle.addEventListener('click', () => {
+    const open = navLinks.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+  navLinks.querySelectorAll('a').forEach(a => {
+    a.addEventListener('click', () => {
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Lightbox
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightboxImg');
+  const lightboxCap = document.getElementById('lightboxCap');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev = document.getElementById('lightboxPrev');
+  const lightboxNext = document.getElementById('lightboxNext');
+  let currentGroup = [];
+  let currentIndex = 0;
+
+  const openLightbox = (groupEls, index) => {
+    currentGroup = groupEls;
+    currentIndex = index;
+    showLightboxItem();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  };
+  const showLightboxItem = () => {
+    const item = currentGroup[currentIndex];
+    const img = item.querySelector('img');
+    const capT = item.querySelector('.gallery-cap .t');
+    const capM = item.querySelector('.gallery-cap .m');
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCap.textContent = [capT ? capT.textContent : '', capM ? capM.textContent : ''].filter(Boolean).join(' — ');
+  };
+  const closeLightbox = () => {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  };
+  const stepLightbox = (dir) => {
+    if (currentGroup.length < 2) return;
+    currentIndex = (currentIndex + dir + currentGroup.length) % currentGroup.length;
+    showLightboxItem();
+  };
+
+  document.querySelectorAll('.gallery-grid').forEach((grid) => {
+    const items = Array.from(grid.querySelectorAll('.gallery-item'));
+    items.forEach((item, i) => {
+      const img = item.querySelector('img');
+      if (!img) return;
+      img.addEventListener('click', () => {
+        const visible = items.filter((it) => !it.classList.contains('filtered-out'));
+        const idx = visible.indexOf(item);
+        openLightbox(visible.length ? visible : items, idx >= 0 ? idx : 0);
+      });
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', () => stepLightbox(-1));
+  lightboxNext.addEventListener('click', () => stepLightbox(1));
+
+  // Case-study featured image (single, no group navigation)
+  const caseImg = document.querySelector('.case-featured-img img');
+  if (caseImg) {
+    caseImg.addEventListener('click', () => {
+      currentGroup = [];
+      currentIndex = 0;
+      lightboxImg.src = caseImg.src;
+      lightboxImg.alt = caseImg.alt;
+      lightboxCap.textContent = 'Square Business Hub — New Damietta, Egypt · 10,000 m² · 2025';
+      lightbox.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  }
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') stepLightbox(-1);
+    if (e.key === 'ArrowRight') stepLightbox(1);
+  });
+</script>
+
+</body>
+</html>
